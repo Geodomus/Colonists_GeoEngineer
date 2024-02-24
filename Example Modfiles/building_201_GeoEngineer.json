@@ -1,0 +1,619 @@
+{
+  "typeId": 201,
+  "ageComponentsDict": {
+    "LEVEL_1": [
+      {
+        "$type": "BuildingConstructionDataInfo, Game",
+        "time": 10.0,
+        "costs": [
+          {
+            "itemTypeId": 2,
+            "quantity": 4
+          },
+          {
+            "itemTypeId": 5,
+            "quantity": 4
+          }
+        ],
+        "energyCost": 0,
+        "requirements": [],
+        "typeId": 29
+      },
+      {
+        "$type": "GeoEngineer.BuildingProductionGeoEngineerDataInfo, GeoEngineer",
+        "radius": 0,
+        "totalRange": 0,
+        "processTime": 120.0,
+        "minProcessTime": -1.0,
+        "additionalTime": 0.0,
+        "miscCatProduced": 200,
+        "itemRequirements": [
+          {
+            "itemTypeId": 254,
+            "itemCategory": 0,
+            "animalTypeId": 255,
+            "naturalResourceTypeId": 255,
+            "individualNaturalResourceTypeId": 255,
+            "miscCatTypeId": 4,
+            "amount": 0
+          }
+        ],
+		"validTerrainCategoryHash": [1,3],
+        "defaultProductionBalance": 50,
+        "isClearanceModeAvailable": false,
+        "displayProcessTime": -1.0,
+        "workerProductionSpeedBoostFactor": 1.0,
+        "activeDirtyType": 0,
+        "typeId": 200
+      },
+      {
+        "$type": "BuildingFuelConsumptionDataInfo, Game",
+        "fuelRequirements": [
+          {
+            "itemTypeId": 43,
+            "itemCategory": 0,
+            "usage": 0,
+            "usageRatePerDay": 3.0
+          }
+        ],
+        "typeId": 30
+      }
+    ],
+    "LEVEL_2": [
+      {
+        "$type": "BuildingConstructionDataInfo, Game",
+        "time": 60.0,
+        "costs": [
+          {
+            "itemTypeId": 5,
+            "quantity": 12
+          },
+          {
+            "itemTypeId": 3,
+            "quantity": 12
+          }
+        ],
+        "energyCost": 0,
+        "requirements": [],
+        "typeId": 29
+      },
+      {
+        "$type": "GeoEngineer.BuildingProductionGeoEngineerDataInfo, GeoEngineer",
+        "radius": 0,
+        "totalRange": 0,
+        "processTime": 90.0,
+        "minProcessTime": -1.0,
+        "additionalTime": 0.0,
+        "miscCatProduced": 200,
+        "itemRequirements": [
+          {
+            "itemTypeId": 254,
+            "itemCategory": 0,
+            "animalTypeId": 255,
+            "naturalResourceTypeId": 255,
+            "individualNaturalResourceTypeId": 255,
+            "miscCatTypeId": 4,
+            "amount": 0
+          }
+        ],
+		"validTerrainCategoryHash": [1,3],
+        "defaultProductionBalance": 50,
+        "isClearanceModeAvailable": false,
+        "displayProcessTime": -1.0,
+        "workerProductionSpeedBoostFactor": 1.0,
+        "activeDirtyType": 0,
+        "typeId": 200
+      },
+      {
+        "$type": "BuildingFuelConsumptionDataInfo, Game",
+        "fuelRequirements": [
+          {
+            "itemTypeId": 45,
+            "itemCategory": 0,
+            "usage": 0,
+            "usageRatePerDay": 2.0
+          }
+        ],
+        "typeId": 30
+      }
+    ],
+    "LEVEL_3": [
+      {
+        "$type": "BuildingConstructionDataInfo, Game",
+        "time": 120.0,
+        "costs": [
+          {
+            "itemTypeId": 5,
+            "quantity": 16
+          },
+          {
+            "itemTypeId": 34,
+            "quantity": 16
+          },
+          {
+            "itemTypeId": 3,
+            "quantity": 16
+          }
+        ],
+        "energyCost": 0,
+        "requirements": [],
+        "typeId": 29
+      },
+      {
+        "$type": "GeoEngineer.BuildingProductionGeoEngineerDataInfo, GeoEngineer",
+        "radius": 0,
+        "totalRange": 0,
+        "processTime": 60.0,
+        "minProcessTime": -1.0,
+        "additionalTime": 0.0,
+        "miscCatProduced": 200,
+        "itemRequirements": [
+          {
+            "itemTypeId": 254,
+            "itemCategory": 0,
+            "animalTypeId": 255,
+            "naturalResourceTypeId": 255,
+            "individualNaturalResourceTypeId": 255,
+            "miscCatTypeId": 4,
+            "amount": 0
+          }
+        ],
+		"validTerrainCategoryHash": [1,3],
+        "defaultProductionBalance": 50,
+        "isClearanceModeAvailable": false,
+        "displayProcessTime": -1.0,
+        "workerProductionSpeedBoostFactor": 1.0,
+        "activeDirtyType": 0,
+        "typeId": 200
+      },
+      {
+        "$type": "BuildingFuelConsumptionDataInfo, Game",
+        "fuelRequirements": [
+          {
+            "itemTypeId": 46,
+            "itemCategory": 0,
+            "usage": 0,
+            "usageRatePerDay": 1.0
+          }
+        ],
+        "typeId": 30
+      }
+    ]
+  },
+  "baseOffsets": [
+    {
+      "type": 0,
+      "coord": {
+        "x": 0,
+        "y": 0
+      },
+      "requirements": [],
+      "isOccupy": true,
+      "isOwnedTerritoryRequired": true,
+      "structureToCreate": 255,
+      "layerTypeToCreate": 255,
+      "customLayerHeights": null,
+      "autoAdjustType": 0,
+      "isPassable": true,
+      "sidesToAdjust": [],
+      "heightOffset": 0,
+      "isBypassVerify": false,
+      "trackDirections": [],
+      "inaccessibleDirections": [
+        {
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "doesNeedUnoccupied": true,
+      "showFootprintHighlight": true,
+      "heightLeeway": 12
+    },
+    {
+      "type": 0,
+      "coord": {
+        "x": 0,
+        "y": 1
+      },
+      "requirements": [],
+      "isOccupy": true,
+      "isOwnedTerritoryRequired": true,
+      "structureToCreate": 255,
+      "layerTypeToCreate": 255,
+      "customLayerHeights": null,
+      "autoAdjustType": 0,
+      "isPassable": true,
+      "sidesToAdjust": [],
+      "heightOffset": 0,
+      "isBypassVerify": false,
+      "trackDirections": [],
+      "inaccessibleDirections": [
+        {
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "doesNeedUnoccupied": true,
+      "showFootprintHighlight": true,
+      "heightLeeway": 12
+    },
+    {
+      "type": 0,
+      "coord": {
+        "x": 0,
+        "y": 2
+      },
+      "requirements": [],
+      "isOccupy": true,
+      "isOwnedTerritoryRequired": true,
+      "structureToCreate": 255,
+      "layerTypeToCreate": 255,
+      "customLayerHeights": null,
+      "autoAdjustType": 0,
+      "isPassable": false,
+      "sidesToAdjust": [],
+      "heightOffset": 0,
+      "isBypassVerify": false,
+      "trackDirections": [],
+      "inaccessibleDirections": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "doesNeedUnoccupied": true,
+      "showFootprintHighlight": true,
+      "heightLeeway": 23
+    },
+    {
+      "type": 0,
+      "coord": {
+        "x": -1,
+        "y": 0
+      },
+      "requirements": [],
+      "isOccupy": true,
+      "isOwnedTerritoryRequired": true,
+      "structureToCreate": 255,
+      "layerTypeToCreate": 255,
+      "customLayerHeights": null,
+      "autoAdjustType": 0,
+      "isPassable": false,
+      "sidesToAdjust": [],
+      "heightOffset": 0,
+      "isBypassVerify": false,
+      "trackDirections": [],
+      "inaccessibleDirections": [
+        {
+          "x": -1,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -1
+        }
+      ],
+      "doesNeedUnoccupied": true,
+      "showFootprintHighlight": true,
+      "heightLeeway": 12
+    },
+    {
+      "type": 0,
+      "coord": {
+        "x": -1,
+        "y": 1
+      },
+      "requirements": [],
+      "isOccupy": true,
+      "isOwnedTerritoryRequired": true,
+      "structureToCreate": 255,
+      "layerTypeToCreate": 255,
+      "customLayerHeights": null,
+      "autoAdjustType": 0,
+      "isPassable": false,
+      "sidesToAdjust": [],
+      "heightOffset": 0,
+      "isBypassVerify": false,
+      "trackDirections": [],
+      "inaccessibleDirections": [
+        {
+          "x": -1,
+          "y": 0
+        }
+      ],
+      "doesNeedUnoccupied": true,
+      "showFootprintHighlight": true,
+      "heightLeeway": 12
+    },
+    {
+      "type": 0,
+      "coord": {
+        "x": -1,
+        "y": 2
+      },
+      "requirements": [],
+      "isOccupy": true,
+      "isOwnedTerritoryRequired": true,
+      "structureToCreate": 255,
+      "layerTypeToCreate": 255,
+      "customLayerHeights": null,
+      "autoAdjustType": 0,
+      "isPassable": false,
+      "sidesToAdjust": [],
+      "heightOffset": 0,
+      "isBypassVerify": false,
+      "trackDirections": [],
+      "inaccessibleDirections": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": -1,
+          "y": 0
+        }
+      ],
+      "doesNeedUnoccupied": true,
+      "showFootprintHighlight": true,
+      "heightLeeway": 12
+    }
+  ],
+  "doesHeightRequireModulus2": false,
+  "customEntranceDirections": [],
+  "maxAmount": -1,
+  "unitPositions": [
+    {
+      "unitTypeId": 8,
+      "isInitial": false,
+      "homeLayerOffset": {
+        "coord": {
+          "x": 0,
+          "y": 1
+        },
+        "subX": 0.0,
+        "subY": 0.0,
+        "rotationY": 0.0
+      },
+      "workLayerOffset": {
+        "coord": {
+          "x": 0,
+          "y": 0
+        },
+        "subX": 0.0,
+        "subY": 0.0,
+        "rotationY": 0.0
+      },
+      "homeLayerOffsetDict": {},
+      "workLayerOffsetDict": {}
+    },
+    {
+      "unitTypeId": 1,
+      "isInitial": true,
+      "homeLayerOffset": {
+        "coord": {
+          "x": 0,
+          "y": 1
+        },
+        "subX": -0.4,
+        "subY": -0.3,
+        "rotationY": 0.0
+      },
+      "workLayerOffset": {
+        "coord": {
+          "x": 0,
+          "y": 0
+        },
+        "subX": 0.0,
+        "subY": 0.0,
+        "rotationY": 0.0
+      },
+      "homeLayerOffsetDict": {},
+      "workLayerOffsetDict": {}
+    }
+  ],
+  "requirements": [],
+  "isAvailable": true,
+  "constructionSiteIdleLoc": {
+    "coord": {
+      "x": 0,
+      "y": 1
+    },
+    "subX": 0.0,
+    "subY": 0.0,
+    "rotationY": 0.0
+  },
+  "constructionSiteWorkerSubLocs": [
+    {
+      "coord": {
+        "x": 0,
+        "y": 1
+      },
+      "subX": 0.3,
+      "subY": 0.4,
+      "rotationY": 0.0
+    },
+    {
+      "coord": {
+        "x": 0,
+        "y": 1
+      },
+      "subX": -0.3,
+      "subY": 0.4,
+      "rotationY": 0.0
+    }
+  ],
+  "doesRequireLandOwnership": true,
+  "componentInfos": [
+    {
+      "$type": "BuildingPriorityLayersDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 0,
+      "storageOffsets": [],
+      "typeId": 36
+    },
+    {
+      "$type": "BuildingStorageConstructionDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 5,
+      "storageOffsets": [
+        {
+          "coord": {
+            "x": 0,
+            "y": 2
+          },
+          "height": 10,
+          "centreOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "slotOffset": 0.0,
+          "heightOffset": 0.0,
+          "restrictedItemTypeId": 254,
+          "shelfItemSlotCount": 4
+        }
+      ],
+      "typeId": 38
+    },
+    {
+      "$type": "BuildingStorageConstructionIncomingDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 7,
+      "storageOffsets": [
+        {
+          "coord": {
+            "x": -1,
+            "y": 1
+          },
+          "height": 3,
+          "centreOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "slotOffset": 0.2,
+          "heightOffset": 0.0,
+          "restrictedItemTypeId": 254,
+          "shelfItemSlotCount": 4
+        }
+      ],
+      "typeId": 42
+    },
+    {
+      "$type": "BuildingStorageIncomingDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 1,
+      "storageOffsets": [
+        {
+          "coord": {
+            "x": -1,
+            "y": 0
+          },
+          "height": 2,
+          "centreOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "slotOffset": 0.2,
+          "heightOffset": 0.0,
+          "restrictedItemTypeId": 254,
+          "shelfItemSlotCount": 4
+        }
+      ],
+      "typeId": 25
+    },
+    {
+      "$type": "BuildingStorageOutgoingDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 2,
+      "storageOffsets": [
+        {
+          "coord": {
+            "x": -1,
+            "y": 1
+          },
+          "height": 2,
+          "centreOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "slotOffset": 0.2,
+          "heightOffset": 0.0,
+          "restrictedItemTypeId": 254,
+          "shelfItemSlotCount": 4
+        }
+      ],
+      "typeId": 26
+    },
+    {
+      "$type": "BuildingStorageProductionIncomingDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 8,
+      "storageOffsets": [
+        {
+          "coord": {
+            "x": 0,
+            "y": 1
+          },
+          "height": 2,
+          "centreOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "slotOffset": 0.2,
+          "heightOffset": 0.0,
+          "restrictedItemTypeId": 254,
+          "shelfItemSlotCount": 4
+        }
+      ],
+      "typeId": 40
+    },
+    {
+      "$type": "BuildingStorageProductionDataInfo, Game",
+      "isStorehouse": false,
+      "isAllowedRules": false,
+      "defaultMode": 0,
+      "startingItems": [],
+      "storageType": 4,
+      "storageOffsets": [
+        {
+          "coord": {
+            "x": 0,
+            "y": 2
+          },
+          "height": 2,
+          "centreOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "slotOffset": 0.0,
+          "heightOffset": 0.0,
+          "restrictedItemTypeId": 254,
+          "shelfItemSlotCount": 4
+        }
+      ],
+      "typeId": 37
+    }
+  ],
+  "category": 3
+}

@@ -19,6 +19,7 @@ namespace GeoEngineer
         private FloorTileLayerRef _ppCurrentWorkerTargetLayerRef;
         private Vector3 _nextSubPosition;
 
+        private bool _ignoreTreesForPriority;
         public BuildingProductionGeoEngineerData() => this.typeId = (TypeID)200;
 
         public override BuildingProductionDataInfo GetInfo() => this.building.GetInfo()
@@ -38,6 +39,8 @@ namespace GeoEngineer
                 {
                     _currentValidTerrainCategoryHash.Add(entry);
                 }
+
+            _ignoreTreesForPriority = ((BuildingProductionGeoEngineerDataInfo)GetInfo()).IgnoreTreesForPriority;
         }
 
         public override void OnPostDeserialise(Entity dEntity)
@@ -204,7 +207,8 @@ namespace GeoEngineer
 
         public override bool IsValidPriorityLayer(FloorTileLayer layer)
         {
-            return layer.IsUnoccupied() && layer.IsLandTerrainCategory(this._currentValidTerrainCategoryHash) &&
+            Debug.Log(_ignoreTreesForPriority);
+            return ((!_ignoreTreesForPriority && layer.IsUnoccupied()) || (_ignoreTreesForPriority && (layer.occupier is Tree || layer.IsUnoccupied()))) && layer.IsLandTerrainCategory(this._currentValidTerrainCategoryHash) &&
                    layer.parentTile.owner == this.building.ownerData.owner && !layer.HasAnyLandRoutes();
         }
     }

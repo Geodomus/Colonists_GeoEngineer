@@ -169,9 +169,6 @@ namespace GeoEngineer
 
         public override int Serialise(byte[] buffer, int offset)
         {
-            List<FloorTileLayerRef> objects1 = new List<FloorTileLayerRef>();
-
-            offset = DataEncoder.EncodeList(objects1, buffer, offset);
             List<FloorTileLayerRef> objects2 = new List<FloorTileLayerRef>();
             int count2 = this._selectedRouteLayers.Count;
             for (int index = 0; index < count2; ++index)
@@ -190,18 +187,11 @@ namespace GeoEngineer
         public override int Deserialise(byte[] buffer, int offset)
         {
             this._ppSelectedRouteLayerFloorPositions = new List<FloorTileLayerRef>();
-            offset = DataEncoder.DecodeList(out this._ppSelectedRouteLayerFloorPositions, buffer,
-                offset);
-            if (Game.instance.currentBundleVersion >= 493)
-            {
-                offset = DataEncoder.Decode(out this._zzzCurrentValidTerrainHash, buffer, offset);
-            }
-
+            offset = DataEncoder.DecodeList(out this._ppSelectedRouteLayerFloorPositions, buffer, offset);
+            offset = DataEncoder.Decode(out this._zzzCurrentValidTerrainHash, buffer, offset);
             offset = DataEncoder.DecodeFloorTileLayer(out this._ppCurrentWorkerTargetLayerRef, buffer, offset);
-            if (Game.instance.currentBundleVersion >= 993)
-                offset = DataEncoder.Decode(out this._nextSubPosition, buffer, offset);
-            if (Game.instance.currentBundleVersion >= 1120)
-                offset = DataEncoder.Decode(out this._currentValidTerrainCategoryHash, buffer, offset);
+            offset = DataEncoder.Decode(out this._nextSubPosition, buffer, offset);
+            offset = DataEncoder.Decode(out this._currentValidTerrainCategoryHash, buffer, offset);
             return base.Deserialise(buffer, offset);
         }
 
